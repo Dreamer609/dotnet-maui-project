@@ -1,15 +1,29 @@
 ﻿namespace AndGate
 {
-    public class MathOperations
+    public class And_Gate
     {
-        public int Add(int a, int b)
+        private double A;
+        private double B;
+
+        // Constructor to initialize A and B
+        public And_Gate(double a, double b)
         {
-            return a + b;
+            A = a;
+            B = b;
         }
 
-        public int Multiply(int a, int b)
+        // Method to add A and B
+        public double Add()
         {
-            return a * b;
+            return A + B;
+        }
+
+        // Method to multiply A and B
+        public double Multiply()
+        {
+            return A * B;
         }
     }
 }
+
+

@@ -13,3 +13,7 @@
 /workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.pdb
 /workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.genruntimeconfig.cache
 /workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/ref/TestProject.dll
+/workspaces/dotnet-maui-project/TestProject/bin/Debug/net8.0/AndGate.dll
+/workspaces/dotnet-maui-project/TestProject/bin/Debug/net8.0/AndGate.pdb
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.csproj.AssemblyReference.cache
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProj.121896E9.Up2Date

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/dotnet-maui-project/MyLibrary/MyLibrary.csproj": {}
+    "/workspaces/dotnet-maui-project/AndGate/AndGate.csproj": {}
   },
   "projects": {
-    "/workspaces/dotnet-maui-project/MyLibrary/MyLibrary.csproj": {
+    "/workspaces/dotnet-maui-project/AndGate/AndGate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/dotnet-maui-project/MyLibrary/MyLibrary.csproj",
-        "projectName": "MyLibrary",
-        "projectPath": "/workspaces/dotnet-maui-project/MyLibrary/MyLibrary.csproj",
+        "projectUniqueName": "/workspaces/dotnet-maui-project/AndGate/AndGate.csproj",
+        "projectName": "AndGate",
+        "projectPath": "/workspaces/dotnet-maui-project/AndGate/AndGate.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/dotnet-maui-project/MyLibrary/obj/",
+        "outputPath": "/workspaces/dotnet-maui-project/AndGate/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"

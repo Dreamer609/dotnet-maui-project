@@ -1,0 +1,12 @@
+/workspaces/dotnet-maui-project/AndGate/bin/Debug/net8.0/AndGate.deps.json
+/workspaces/dotnet-maui-project/AndGate/bin/Debug/net8.0/AndGate.dll
+/workspaces/dotnet-maui-project/AndGate/bin/Debug/net8.0/AndGate.pdb
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/AndGate.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/AndGate.AssemblyInfoInputs.cache
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/AndGate.AssemblyInfo.cs
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/AndGate.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/AndGate.sourcelink.json
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/AndGate.dll
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/refint/AndGate.dll
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/AndGate.pdb
+/workspaces/dotnet-maui-project/AndGate/obj/Debug/net8.0/ref/AndGate.dll
