@@ -1,0 +1,15 @@
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfoInputs.cache
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.AssemblyInfo.cs
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.csproj.CoreCompileInputs.cache
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.sourcelink.json
+/workspaces/dotnet-maui-project/TestProject/bin/Debug/net8.0/TestProject
+/workspaces/dotnet-maui-project/TestProject/bin/Debug/net8.0/TestProject.deps.json
+/workspaces/dotnet-maui-project/TestProject/bin/Debug/net8.0/TestProject.runtimeconfig.json
+/workspaces/dotnet-maui-project/TestProject/bin/Debug/net8.0/TestProject.dll
+/workspaces/dotnet-maui-project/TestProject/bin/Debug/net8.0/TestProject.pdb
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.dll
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/refint/TestProject.dll
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.pdb
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/TestProject.genruntimeconfig.cache
+/workspaces/dotnet-maui-project/TestProject/obj/Debug/net8.0/ref/TestProject.dll
