@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "dotenv.net/3.2.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/dotenv.net.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/dotenv.net.dll": {}
-        }
-      },
       "AndGate/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -24,21 +15,6 @@
     }
   },
   "libraries": {
-    "dotenv.net/3.2.1": {
-      "sha512": "2fc2s5PH6wAoWQ8bpyVgz28y9qMs/t8ToiCKqSM6mWpjgg4QQSPtZ0nia0x/OebGLSDbxyOelVH+fULZH7N4mA==",
-      "type": "package",
-      "path": "dotenv.net/3.2.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "dotenv.net.3.2.1.nupkg.sha512",
-        "dotenv.net.nuspec",
-        "lib/netstandard1.6/dotenv.net.dll",
-        "lib/netstandard2.0/dotenv.net.dll",
-        "lib/netstandard2.1/dotenv.net.dll"
-      ]
-    },
     "AndGate/1.0.0": {
       "type": "project",
       "path": "../AndGate/AndGate.csproj",
@@ -47,8 +23,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AndGate >= 1.0.0",
-      "dotenv.net >= 3.2.1"
+      "AndGate >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -96,12 +71,6 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
-        "dependencies": {
-          "dotenv.net": {
-            "target": "Package",
-            "version": "[3.2.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

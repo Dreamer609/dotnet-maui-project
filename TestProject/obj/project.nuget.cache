@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BP8hfT8nQUk=",
+  "dgSpecHash": "o1OwctGhi7E=",
   "success": true,
   "projectFilePath": "/workspaces/dotnet-maui-project/TestProject/TestProject.csproj",
-  "expectedPackageFiles": [
-    "/home/codespace/.nuget/packages/dotenv.net/3.2.1/dotenv.net.3.2.1.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

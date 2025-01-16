@@ -1,76 +1,67 @@
 ﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
 using System.IO;
-using DotNetEnv;
 
 namespace AndGate
 {
-    public class And_Gate
+    public class AndLogicGate
     {
-        private bool input1;
-        private bool input2;
-        private string envImageUrl;
-        private string saveFolderPath;  // Add a field to store the folder path
+        private int input1;
+        private int input2;
+        private string ImagePath;  // This should be consistent with the constructor parameter
 
         // Public constructor to allow instantiation from outside
-        public And_Gate(bool input1, bool input2, private string envImageUrl, private string saveFolderPath = "Images")
+        public AndLogicGate(int input1, int input2, string ImagePath)
         {
             this.input1 = input1;
             this.input2 = input2;
-            this.envImageUrl = envImageUrl;
-            this.saveFolderPath = saveFolderPath;
-
-            // Load environment variables from the .env file
-            Env.Load();
+            this.ImagePath = ImagePath;  // Assign the ImagePath parameter to the class field
             
-            // Conditionally create the folder if it doesn't exist
-            if (!Directory.Exists(saveFolderPath))
+            // Check inputs and image extension
+            if (!validation()) // If validation fails, throw an exception
             {
-                Directory.CreateDirectory(saveFolderPath);
-                Console.WriteLine($"Directory '{saveFolderPath}' created.");
+                throw new ArgumentException("Error occurred: Invalid inputs or image format.");
+            }
+        }
+
+        // Validation method for inputs and image format
+        public bool validation()
+        {
+            // Validate inputs and image extension
+            if (InputCheck(input1, input2) && resourceCheck() == ".png")
+            {
+                return true; // Valid inputs and image format
             }
             else
             {
-                Console.WriteLine($"Directory '{saveFolderPath}' already exists.");
+                return false; // Invalid inputs or image format
             }
         }
 
-        // Public method to download the image bytes asynchronously
-        public async Task DownloadImageBytesAsync()
+        // Resource extension check
+        private string resourceCheck()
         {
-            // Get the GitHub token from the .env file
-            string githubToken = Env.GetString("GITHUB_TOKEN");
+            string imageExtensionCheck = Path.GetExtension(ImagePath).ToLower();
+            return imageExtensionCheck;
+        }
 
-            // Download the raw image bytes from the URL in the env variable
-            using (HttpClient client = new HttpClient())
-            {
-                try
-                {
-                    // Add the Authorization header with the GitHub token
-                    client.DefaultRequestHeaders.Authorization = new Http.Headers.AuthenticationHeaderValue("Bearer", githubToken);
+        // Input validation check
+        private static bool InputCheck(int input1, int input2)
+        {
+            // Return true if inputs are valid (0 or 1), false otherwise
+            return (input1 == 0 || input1 == 1) && (input2 == 0 || input2 == 1);
+        }
 
-                    // Get the raw byte array from the image URL
-                    byte[] imageBytes = await client.GetByteArrayAsync(envImageUrl);
-
-                    // Extract the file name from the URL
-                    string fileName = Path.GetFileName(new Uri(envImageUrl).AbsolutePath);
-
-                    // Combine the folder path and the file name to get the full path
-                    string filePath = Path.Combine(saveFolderPath, fileName);
-
-                    // Save the image to the specified folder
-                    await File.WriteAllBytesAsync(filePath, imageBytes);
-
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error downloading the image: {ex.Message}");
-                }
-            }
+        // Logic gate method
+        public int LogicGate()
+        {
+            // Perform AND operation
+            int result = this.input1 * this.input2; 
+            return result;
         }
     }
 }
+
+
 
 
 
